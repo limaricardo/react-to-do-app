@@ -22,7 +22,7 @@ function AddNewProject (){
                             .add(
                                 {
                                     name: projectName,
-                                    // author_uid: user.uid;
+                                    author_uid: firebase.auth().currentUser.uid
                                 }
                             )
                     }else{

@@ -33,7 +33,8 @@ function AddNewTodo (){
                          time: moment(time).format('HH:mm'),
                          checked: false,
                          color: randomcolor({luminosity : 'dark'}),
-                         projectName: todoProject
+                         projectName: todoProject,
+                         author_uid: firebase.auth().currentUser.uid
                      }
                 )
 
